@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from './components/card';
+import Stack from 'react-bootstrap/esm/Stack';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <Stack gap={5}>
+  <Card title ="pink" colors="#FF6333" code="#FF6333"/>
+  <Card title ="Gray" colors="#333333" code="#333333"/>
+  <Card title ="Black" colors="#000000" code="000000"/>
+  <Card title ="Orange" colors="#FF8000" code="FF8000"/>
+  <Card title ="Yellow" colors="#FFF500" code="FFF500"/>
+  <Card title ="Light Gray" colors="#cccccc" code="CCCCCC"/>
+
+  </Stack>
+    </>
   );
+
 }
 
 export default App;
